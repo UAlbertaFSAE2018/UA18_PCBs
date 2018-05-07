@@ -1094,26 +1094,26 @@ With round pins</description>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="A5/SCL"/>
-<wire x1="10.16" y1="-127" x2="5.08" y2="-127" width="0.1524" layer="91"/>
-<label x="5.08" y="-127" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="2,2A"/>
 <wire x1="111.76" y1="-43.18" x2="106.68" y2="-43.18" width="0.1524" layer="91"/>
 <label x="106.68" y="-43.18" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="SCL"/>
+<wire x1="71.12" y1="-78.74" x2="76.2" y2="-78.74" width="0.1524" layer="91"/>
+<label x="73.66" y="-78.74" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="A4/SDA"/>
-<wire x1="10.16" y1="-124.46" x2="5.08" y2="-124.46" width="0.1524" layer="91"/>
-<label x="5.08" y="-124.46" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="2,1A"/>
 <wire x1="111.76" y1="-38.1" x2="106.68" y2="-38.1" width="0.1524" layer="91"/>
 <label x="106.68" y="-38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="SDA"/>
+<wire x1="71.12" y1="-81.28" x2="76.2" y2="-81.28" width="0.1524" layer="91"/>
+<label x="73.66" y="-81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A0" class="0">

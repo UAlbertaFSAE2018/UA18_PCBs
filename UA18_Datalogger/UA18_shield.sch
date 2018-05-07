@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -1097,6 +1098,21 @@ connected to 5V (or 3V)</text>
 <wire x1="137.16" y1="-106.68" x2="127" y2="-106.68" width="0.1524" layer="91"/>
 <label x="127" y="-106.68" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="2,3A"/>
+<wire x1="111.76" y1="-48.26" x2="106.68" y2="-48.26" width="0.1524" layer="91"/>
+<label x="106.68" y="-48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="2,4A"/>
+<wire x1="111.76" y1="-53.34" x2="106.68" y2="-53.34" width="0.1524" layer="91"/>
+<label x="106.68" y="-53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="2,5A"/>
+<wire x1="111.76" y1="-58.42" x2="106.68" y2="-58.42" width="0.1524" layer="91"/>
+<label x="106.68" y="-58.42" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -1168,15 +1184,30 @@ connected to 5V (or 3V)</text>
 <label x="106.68" y="-33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="2,3A"/>
-<wire x1="111.76" y1="-48.26" x2="106.68" y2="-48.26" width="0.1524" layer="91"/>
-<label x="106.68" y="-48.26" size="1.778" layer="95"/>
-</segment>
-<segment>
 <label x="88.9" y="-83.82" size="1.778" layer="95"/>
 <label x="99.06" y="-83.82" size="1.778" layer="95"/>
 <wire x1="99.06" y1="-83.82" x2="93.98" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="-83.82" x2="88.9" y2="-83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="3,2A"/>
+<wire x1="132.08" y1="-66.04" x2="132.08" y2="-71.12" width="0.1524" layer="91"/>
+<label x="132.08" y="-71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="3,3A"/>
+<wire x1="137.16" y1="-66.04" x2="137.16" y2="-71.12" width="0.1524" layer="91"/>
+<label x="137.16" y="-71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="3,4A"/>
+<wire x1="142.24" y1="-66.04" x2="142.24" y2="-71.12" width="0.1524" layer="91"/>
+<label x="142.24" y="-71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="3,5A"/>
+<wire x1="147.32" y1="-66.04" x2="147.32" y2="-71.12" width="0.1524" layer="91"/>
+<label x="147.32" y="-71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3V" class="0">
@@ -1515,20 +1546,6 @@ connected to 5V (or 3V)</text>
 <label x="48.26" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="P1" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="2,4A"/>
-<wire x1="111.76" y1="-53.34" x2="106.68" y2="-53.34" width="0.1524" layer="91"/>
-<label x="106.68" y="-53.34" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="P2" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="2,5A"/>
-<wire x1="111.76" y1="-58.42" x2="106.68" y2="-58.42" width="0.1524" layer="91"/>
-<label x="106.68" y="-58.42" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="D1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="3,1A"/>
@@ -1539,34 +1556,6 @@ connected to 5V (or 3V)</text>
 <pinref part="U2" gate="G$1" pin="D6"/>
 <wire x1="71.12" y1="-109.22" x2="76.2" y2="-109.22" width="0.1524" layer="91"/>
 <label x="73.66" y="-109.22" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="D2" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="3,2A"/>
-<wire x1="132.08" y1="-66.04" x2="132.08" y2="-71.12" width="0.1524" layer="91"/>
-<label x="132.08" y="-71.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="D3" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="3,3A"/>
-<wire x1="137.16" y1="-66.04" x2="137.16" y2="-71.12" width="0.1524" layer="91"/>
-<label x="137.16" y="-71.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="D4" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="3,4A"/>
-<wire x1="142.24" y1="-66.04" x2="142.24" y2="-71.12" width="0.1524" layer="91"/>
-<label x="142.24" y="-71.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="D5" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="3,5A"/>
-<wire x1="147.32" y1="-66.04" x2="147.32" y2="-71.12" width="0.1524" layer="91"/>
-<label x="147.32" y="-71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -1664,7 +1653,7 @@ Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
 </note>
 <note version="8.2" severity="warning">
-Since Version 8.2, Eagle supports online libraries. The ids
+Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
 </note>

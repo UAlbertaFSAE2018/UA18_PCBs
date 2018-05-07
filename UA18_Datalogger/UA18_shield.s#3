@@ -958,6 +958,9 @@ With round pins</description>
 <text x="134.62" y="-116.84" size="1.778" layer="97" align="top-left">TX and RX reversed
 3V connected to VIN
 3V out (pin 1) NC</text>
+<text x="88.9" y="-81.28" size="1.778" layer="91">The MUX chips have a VDD
+which should be
+connected to 5V (or 3V)</text>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="22.86" y="-35.56"/>
